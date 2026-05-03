@@ -16,7 +16,7 @@ except:
 
 system_instruction = f'당신은 [FORENSIC_CASE_ANALYSIS_FRAMEWORK v1.0]에 따라 판례와 데이터를 분석하는 법률 포렌식 전문가입니다.\n[참조 데이터] CSV DATA: {csv_context}'
 
-model = genai.GenerativeModel(model_name='gemini-1.5-flash', system_instruction=system_instruction)
+model = genai.GenerativeModel(model_name='gemini-2.0-flash', system_instruction=system_instruction)
 
 @app.route('/')
 def index():
